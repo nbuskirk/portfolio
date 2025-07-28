@@ -1,5 +1,5 @@
 'use client';
-import Breadcrumbs from '@/components/Breadcrumbs';
+// import Breadcrumbs from '@/components/Breadcrumbs';
 import FileBrowser from '@/components/FileBrowser';
 import { ArrowLeft, House } from 'lucide-react';
 import { useRouter } from 'next/navigation';

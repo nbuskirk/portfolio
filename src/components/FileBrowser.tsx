@@ -6,7 +6,9 @@ import FileModal from './FileModal';
 import { Folder, File } from 'lucide-react';
 
 export default function FileBrowser({ initialPath }: { initialPath: string }) {
-  const [files, setFiles] = useState<any[]>([]);
+  const [files, setFiles] = useState<
+    { name: string; isDirectory: boolean; fullPath: string }[]
+  >([]);
   const [modalPath, setModalPath] = useState<string | null>(null);
 
   files.sort((a, b) => {

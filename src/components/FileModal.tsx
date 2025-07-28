@@ -1,11 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { createPortal } from 'react-dom';
 
 export default function FileModal({
   path,
-  onClose,
 }: {
   path: string;
   onClose: () => void;

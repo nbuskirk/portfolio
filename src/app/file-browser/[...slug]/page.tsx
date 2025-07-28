@@ -1,12 +1,12 @@
 'use client';
 import FileBrowser from '@/components/FileBrowser';
-import Breadcrumbs from '@/components/Breadcrumbs';
+// import Breadcrumbs from '@/components/Breadcrumbs';
 import { ArrowLeft, House } from 'lucide-react';
 import React from 'react';
-import { useRouter } from 'next/navigation';
-export default function FolderPage({ params }: { params: { slug: string[] } }) {
-  const paramss: { slug: string[] } = React.use(params);
-  const path = paramss.slug.join('/');
+import { useParams, useRouter } from 'next/navigation';
+export default function FolderPage() {
+  const params = useParams<{ slug: string[] }>();
+  const path = params.slug.join('/');
   const router = useRouter();
   return (
     <div className='min-h-[calc(100vh-87px)] bg-zinc-100 px-15 py-15'>
