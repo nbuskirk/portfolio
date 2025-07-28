@@ -1,0 +1,69 @@
+.stack {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    padding: '16px 16px 16px 24px';
+    width: 70%;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.uploadMalware {
+  display: flex;
+  align-items: center;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.emailIcon {
+  font-size: 24px;
+  margin-right: 3px;
+}
+
+.editIconButton {
+  margin-left: 16px;
+}
+
+.editIcon {
+  font-size: 16px;
+}
+
+.switchWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.switchContainer {
+  height: 36px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1150px) {
+  .alertContainer {
+    max-width: 100%;
+  }
+}
+
+.footerElement{
+  margin: .5em;
+  white-space: nowrap;
+  align-self: flex-start;
+  min-width: 55px;
+}
+
+.footerMessage {
+  white-space: normal;
+}

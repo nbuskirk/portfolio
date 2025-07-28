@@ -1,0 +1,10 @@
+.stack {
+  &__dropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 360px;
+    max-width: 360px;
+    padding: 12px 12px 24px 12px;
+  }
+}

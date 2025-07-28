@@ -1,0 +1,119 @@
+//TooltipProcessor
+.processor {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5px;
+  padding: 5px 5px 5px 3px;
+  width: 205px;
+  height: 50px;
+}
+.processorContent {
+  transform: translateY(4px);
+}
+.processorTitle {
+  font-size: 12px;
+  font-weight: 700;
+}
+.processorDescription {
+  font-size: 10px;
+}
+
+//TooltipAddingChartDisabled
+.addingChartText {
+  font-size: 14px;
+  width: 200px;
+}
+
+//TooltipGanttChart
+.ganttChart {
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 220px;
+  height: 250px;
+}
+.ganttChartHeader {
+  padding: 8px;
+}
+.ganttChartTitle {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ganttChartJobName {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 22px;
+}
+
+.ganttChartChipStatus {
+  transform: translateY(3px);
+}
+
+.ganttChartContent {
+  padding: 8px 22px 0px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.startIcon {
+  height: 10px;
+  transform: translateX(4px);
+}
+
+//TooltipBackupCouldNotFit
+.backupCouldNotFit {
+  width: 200px;
+  height: 155px;
+}
+
+.backupCouldNotFitHeader {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5px;
+  padding: 5px 5px 5px 0px;
+}
+.backupCouldNotFitTitle {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.backupCouldNotFitDividerBox {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+
+.backupCouldNotFitContent {
+  padding: 10px;
+  gap: 17px;
+}
+
+.backupCouldNotFitItems {
+  padding: 0px 25px;
+  gap: 10px;
+}
+
+.backupCouldNotFitCTA {
+  display: flex;
+  justify-content: center;
+}
+//PairRow
+.pairRow {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 100%;
+}
+
+.pairRowContent {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.pairRowWrapper {
+  margin-left: -12px;
+}

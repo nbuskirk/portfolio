@@ -1,0 +1,17 @@
+.input {
+  &__searchMenu {
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+}
+.startIcon {
+  position: relative;
+  top: -2.5px;
+  left: -3px;
+  height: 16px;
+}
+.centeredBtn {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}

@@ -1,0 +1,8 @@
+.box {
+  &__sliderContent {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+  }
+}

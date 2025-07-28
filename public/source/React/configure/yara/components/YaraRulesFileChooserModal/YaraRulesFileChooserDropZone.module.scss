@@ -1,0 +1,77 @@
+.stack {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 16px;
+    max-height: 180px;
+    position: relative;
+    margin-top: 16px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 14px;
+    padding: 30px 0 41px 0;
+  }
+}
+  
+.typography {
+  &__uploadBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  &__fileName {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &__fileSize {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  &__dropzoneBody {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+  }
+  &__error {
+    width: 100%;
+    text-align: left;
+    margin: 12px 0 0 0;
+    font-size: 12px;
+  }
+}
+  
+.stack {
+  &__closeIcon {
+    margin-top: 0;
+    margin-bottom: 0,;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.box {
+  &__progressBar {
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+
+.closeIcon {
+  margin-top: 2px;
+  margin-bottom: 0,;
+  padding-top: 0;
+  padding-bottom: 0;
+  float: right
+}

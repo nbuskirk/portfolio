@@ -1,0 +1,41 @@
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  gap: 10px;
+  min-height: 60px;
+  padding: 0 20px;
+  background-color: transparent;
+  transition:
+    background-color 256ms ease-in-out,
+    color 256ms ease-in-out;
+  font-weight: 700;
+  color: var(--ie-palette-neutral-white200);
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &.active {
+    background-color: var(--ie-palette-neutral-secondary300);
+    color: var(--ie-palette-white-main);
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 4px;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--ie-palette-white-main);
+    transition: opacity 256ms ease-in-out;
+    content: '';
+  }
+}

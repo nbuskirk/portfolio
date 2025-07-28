@@ -1,0 +1,95 @@
+.loginContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  display: block;
+  flex-direction: column;
+  background-color: white;
+  padding: 16px 0px 0px 22px;
+  border: 1px solid var(--ie-palette-neutral-dark500);
+  border-radius: 4px;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.max_width {
+  width: 72%;
+}
+
+.toggleLable {
+  margin: 22px 0px 16px 0px;
+}
+
+.changes {
+  display: flex;
+  justify-content: right;
+}
+
+.message {
+  width: 100%;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.radioGroup {
+  padding-top: 1.2rem;
+  display: flex;
+}
+
+.radioOption {
+  margin: 0em 0.5em 0em 1em;
+}
+
+.switch {
+  margin-right: 0.5em;
+}
+
+.boxInput {
+  display: flex;
+  gap: 1.5em;
+}
+
+.cybersense {
+  gap: 5px;
+  border-bottom: 1px #99999966 solid;
+  padding-bottom: 16px;
+  margin-bottom: 13px;
+}
+
+.button {
+  width: auto;
+  height: auto;
+  border: solid 1px;
+  margin: 10px 0px 10px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.button_container {
+  padding: 1.5px 10px;
+  display: flex;
+  justify-content: center;
+  text-transform: none;
+}
+
+.typography_subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

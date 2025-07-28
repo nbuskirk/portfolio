@@ -1,0 +1,23 @@
+.searchField {
+  width: 360px;
+  margin-right: -10px;
+}
+.searchIcon {
+  transform: translateX(10px);
+  height: 18px;
+}
+.endIcon {
+  height: 16px;
+  width: 16px;
+  transform: translateX(-1px);
+  &:hover {
+    background-color: black;
+  }
+}
+.clearIcon {
+  height: 12px;
+}
+
+.toggleSearchIcon {
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.box {
+  &__main {
+    border-radius: 4px;
+    max-height: 48px;
+    margin-top: 6px;
+  }
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 17px;
+  }
+  &__capacity {
+    margin-top: 18px;
+  }
+}
+
+.footerButton {
+	margin: .5em;
+}
+
+.changes {
+	display: flex;
+	justify-content: right;
+	position: relative;
+}
+

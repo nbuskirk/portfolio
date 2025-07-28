@@ -1,0 +1,88 @@
+.main{
+  margin: 14px;
+  gap: 14px;
+}
+
+.stack {
+  &__titleRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+    white-space: nowrap;
+  }
+  &__subtitleRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__chip {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    min-height: 24px;
+    align-items: flex-start;
+  }
+}
+
+.typography {
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  &__subtitleWarn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #CF4B0D;
+  }
+}
+
+.chartWrapper {
+  padding: 12px 5px 16px 0px;
+  max-height: 131px;
+  max-width: 446px;
+  width: 100%;
+  & > div {
+    pointer-events: none;
+  }
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .stack {
+    &__titleRow {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__chip {
+      flex-direction: column;
+      gap: 0px;
+      .chip {
+        position: relative;
+        left: -7px;
+      }
+    }
+  }
+}
+
+.container {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    transition: 256ms ease-in-out;
+    min-width: 348px;
+  }
+}

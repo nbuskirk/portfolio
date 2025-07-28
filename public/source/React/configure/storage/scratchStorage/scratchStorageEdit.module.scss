@@ -1,0 +1,56 @@
+.box {
+  &__main {
+    height: 210px;
+  }
+}
+
+.stack {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.typography {
+  &__warningText {
+    font-size: 12px;
+    padding: 0px 10px 0px 5px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}
+
+.startIcon {
+  position: relative;
+  top: -2.5px;
+  left: -3px;
+  height: 16px;
+}
+
+.footerButton {
+	margin: .5em;
+}
+
+.changes {
+	display: flex;
+	justify-content: right;
+	position: relative;
+}

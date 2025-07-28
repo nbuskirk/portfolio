@@ -1,0 +1,119 @@
+.form_container {
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.typography_subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.section {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.content {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.directory_container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid var(--ie-palette-neutral-dark500);
+  border-radius: 4px;
+  padding: 16px 0px 0px 22px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.account_container {
+  gap: 6px 0px;
+  padding: 20px 0px;
+}
+
+.changes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.query_table {
+  width: 100%;
+  gap: 15px 15px;
+  background-color: white;
+}
+
+.button {
+  width: auto;
+  height: auto;
+  border: transparent 0px solid;
+  margin: 10px 0px 10px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.title {
+  margin-top: 12px;
+  padding: 0px;
+  border: 0px;
+}
+
+.myCheckboxClass {
+  transform: scale(1);
+}
+
+.table {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #cad6e0;
+  border-radius: 4px;
+}
+
+.display_block {
+  display: block;
+}
+
+.display_none {
+  display: none;
+}
+
+.queryDomain {
+  width: 450px;
+  padding: 10px;
+}

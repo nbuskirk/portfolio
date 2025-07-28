@@ -1,0 +1,9 @@
+@media print {
+  header,
+  #sidebar,
+  #copyright,
+  .MuiAppBar-root,
+  .view {
+    display: none;
+  }
+}

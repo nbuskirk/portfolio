@@ -1,0 +1,161 @@
+.securityContainer {
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 600px;
+}
+
+.body {
+  margin: 0px;
+  padding: 14px 0px 0px 20px;
+  border: 1px solid var(--ie-palette-neutral-dark500);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.section {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text1 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.typography_subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.button {
+  width: 120px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.fileUploadContainer {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 14px;
+  border-bottom: 1px solid #cdd0d4;
+}
+
+.message {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.uploadButton {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fileName {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.uploadcontainer {
+  height: 150px;
+  background-color: var(--ie-palette-neutral-primary600);
+  padding: 20px 20px 20px 20px;
+  border-radius: 4px;
+  border: var(--ie-palette-neutral-dark500) 1px solid;
+}
+
+.filedetails {
+  border-top: 1px solid #cdd0d4;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.descriptionIcon {
+  font-size: 40px;
+}
+
+.colorGrey {
+  color: #1f2933;
+}
+
+.expiration,
+.issuer,
+.validfrom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon_holder {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cdd0d4;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.active_primary {
+  background-color: #003057;
+  color: white;
+}
+
+.inactive_primary {
+  background-color: #a0a6b0;
+  color: white;
+}
+
+.active_secondary {
+  border: 1px solid #003057;
+  color: #003057;
+}
+
+.inactive_secondary {
+  border: 1px solid #a0a6b0;
+  color: #a0a6b0;
+}
+
+.display_block {
+  display: block;
+}
+
+.display_none {
+  display: none;
+}

@@ -1,0 +1,65 @@
+.stack {
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  &__item__contained {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9px;
+    gap: 8px;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 0 3px;
+  }
+  &__icons__contained {
+    display: flex;
+    flex-direction: row;
+    transform: translate(-6px, 2px);
+  }
+}
+
+.iconRegular {
+  font-size: 20px;
+  position: relative;
+  top: -1px;
+}
+
+.iconRegular__contained {
+  font-size: 20px;
+  position: relative;
+  transform: translateX(-2px);
+}
+
+.iconSmall {
+  font-size: 17px;
+  position: relative;
+  top: -1px;
+}
+
+.typography {
+  &__name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &__size {
+    font-size: 12px;
+    transform: translate(3px, 1px);
+  }
+}
