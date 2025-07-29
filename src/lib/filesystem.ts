@@ -1,8 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const BASE_DIR = './public/source';
-
+const BASE_DIR = process.env.PROJECT_SOURCE_DIR || '';
 export async function listDirectory(relativePath: string = '') {
   const targetDir = path.join(BASE_DIR, relativePath);
   const files = await fs.readdir(targetDir, { withFileTypes: true });

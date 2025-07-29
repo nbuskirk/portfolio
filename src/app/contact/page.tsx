@@ -66,8 +66,26 @@ const ContactPage = () => {
             Resume
           </h2>
           <div className='bg-white p-5'>
-            <p className='text-gray-600'>DOC</p>
-            <p className='text-gray-600'>PDF</p>
+            <ul>
+              <li>
+                <Link
+                  href='/nbresume.pdf'
+                  target='_blank'
+                  className='text-neutral-500 hover:text-sky-600'
+                >
+                  PDF
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/nbresume.docx'
+                  target='_blank'
+                  className='text-neutral-500 hover:text-sky-600'
+                >
+                  DOCX
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
