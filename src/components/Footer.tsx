@@ -50,9 +50,26 @@ const Footer = () => {
           <h2 className='mb-[20px] text-sm font-medium tracking-[3px] uppercase'>
             Resume
           </h2>
-
-          <p className='text-neutral-500'>DOC</p>
-          <p className='text-neutral-500'>PDF</p>
+          <ul>
+            <li>
+              <Link
+                href='/nbresume.pdf'
+                target='_blank'
+                className='text-neutral-500 hover:text-sky-600'
+              >
+                PDF
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='/nbresume.docx'
+                target='_blank'
+                className='text-neutral-500 hover:text-sky-600'
+              >
+                DOCX
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

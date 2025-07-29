@@ -12,7 +12,7 @@ export default function Home() {
         className={`flex h-[calc(100vh-87px)] items-center justify-center bg-zinc-100`}
       >
         <h1
-          className={`${bebasNeue.className} text-4xl text-black sm:text-6xl md:text-7xl`}
+          className={`${bebasNeue.className} text-3xl text-gray-700 sm:text-4xl md:text-5xl lg:text-6xl`}
         >
           Nathan Buskirk | Front-end Developer
         </h1>
