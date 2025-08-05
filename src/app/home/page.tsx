@@ -14,7 +14,7 @@ export default function Home() {
         <h1
           className={`${bebasNeue.className} text-3xl text-gray-700 sm:text-4xl md:text-5xl lg:text-6xl`}
         >
-          Nathan Buskirk | Front-end Developer
+          Portfolio
         </h1>
       </section>
     </>

@@ -8,10 +8,10 @@ const Footer = () => {
           <h2 className='mb-[20px] text-sm font-medium tracking-[3px] uppercase'>
             Contact
           </h2>
-
+          <p className='text-gray-600'>Nathan Buskirk</p>
           <p className='text-gray-600'>110 Aurora Street</p>
           <p className='text-gray-600'>Bethlehem, PA 18018</p>
-          <p>
+          <p className='mt-5'>
             <Link
               href='mailto:nbuskirk@gmail.com'
               className='text-gray-700 hover:text-sky-600'
@@ -66,7 +66,7 @@ const Footer = () => {
                 target='_blank'
                 className='text-neutral-500 hover:text-sky-600'
               >
-                DOCX
+                DOC
               </Link>
             </li>
           </ul>

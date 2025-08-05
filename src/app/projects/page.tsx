@@ -32,9 +32,43 @@ const Projects = () => {
       <div className='mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5'>
         <div className='relative h-60 w-full'>
           <Image
+            src='/screenshots/cybersense4.png'
+            layout='responsive'
+            width='1428'
+            height='997'
+            alt='CyberSense UI'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+        <div className='relative h-60 w-full'>
+          <Image
             src='/screenshots/cybersense1.png'
-            layout='fill'
-            alt='Haunted Castle'
+            layout='responsive'
+            width='3080'
+            height='1866'
+            alt='CyberSense UI'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/cybersense3.png'
+            layout='responsive'
+            width='1083'
+            height='556'
+            alt='CyberSense UI'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/cybersense5.png'
+            layout='responsive'
+            width='940'
+            height='477'
+            alt='CyberSense UI'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>
@@ -42,31 +76,7 @@ const Projects = () => {
           <Image
             src='/screenshots/cybersense2.png'
             layout='fill'
-            alt='Haunted Castle'
-            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
-          />
-        </div>
-        <div className='relative h-60 w-full'>
-          <Image
-            src='/screenshots/cybersense3.png'
-            layout='fill'
-            alt='Haunted Castle'
-            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
-          />
-        </div>
-        <div className='relative h-60 w-full'>
-          <Image
-            src='/screenshots/cybersense4.png'
-            layout='fill'
-            alt='Haunted Castle'
-            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
-          />
-        </div>
-        <div className='relative h-60 w-full'>
-          <Image
-            src='/screenshots/cybersense5.png'
-            layout='fill'
-            alt='Haunted Castle'
+            alt='CyberSense UI'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>
@@ -74,7 +84,7 @@ const Projects = () => {
           <Image
             src='/screenshots/cybersense6.png'
             layout='fill'
-            alt='Haunted Castle'
+            alt='CyberSense UI'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>
@@ -82,7 +92,7 @@ const Projects = () => {
           <Image
             src='/screenshots/lmb1.png'
             layout='fill'
-            alt='Haunted Castle'
+            alt='LowerMyBills.com'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>
@@ -95,31 +105,9 @@ const Projects = () => {
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/ss1.png'
-            layout='fill'
-            alt='Unity Demo'
-            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
-          />
-        </div>
-        <div className='relative h-60 w-full'>
-          <Image
-            src='/screenshots/ss2.png'
-            layout='fill'
-            alt='Unity Demo'
-            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
-          />
-        </div>
-        <div className='relative h-60 w-full'>
-          <Image
-            src='/screenshots/ss3.png'
-            layout='fill'
-            alt='Unity Demo'
-            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
-          />
-        </div>
-        <div className='relative h-60 w-full'>
-          <Image
-            src='/screenshots/ss4.png'
-            layout='fill'
+            layout='responsive'
+            width='3840'
+            height='2160'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
@@ -127,15 +115,51 @@ const Projects = () => {
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/ss5.png'
-            layout='fill'
+            layout='responsive'
+            width='3840'
+            height='2160'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>
         <div className='relative h-60 w-full'>
           <Image
+            src='/screenshots/ss2.png'
+            layout='responsive'
+            width='3840'
+            height='2160'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss4.png'
+            layout='responsive'
+            width='3840'
+            height='2160'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss3.png'
+            layout='responsive'
+            width='3840'
+            height='2160'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+
+        <div className='relative h-60 w-full'>
+          <Image
             src='/screenshots/hcastle1.png'
-            layout='fill'
+            layout='responsive'
+            width='2078'
+            height='1262'
             alt='Haunted Castle'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
@@ -143,7 +167,9 @@ const Projects = () => {
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/hcastle2.png'
-            layout='fill'
+            layout='responsive'
+            width='1432'
+            height='838'
             alt='Haunted Castle'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
@@ -151,7 +177,9 @@ const Projects = () => {
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/hcastle3.png'
-            layout='fill'
+            layout='responsive'
+            width='2070'
+            height='1202'
             alt='Haunted Castle'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
@@ -159,7 +187,9 @@ const Projects = () => {
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/hcastle4.png'
-            layout='fill'
+            layout='responsive'
+            width='1358'
+            height='798'
             alt='Haunted Castle'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
@@ -167,16 +197,20 @@ const Projects = () => {
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/ultima1.png'
-            layout='fill'
-            alt='Haunted Castle'
+            layout='responsive'
+            width='1682'
+            height='1168'
+            alt='Ultima V Phaser'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/ultima2.png'
-            layout='fill'
-            alt='Haunted Castle'
+            layout='responsive'
+            width='1672'
+            height='1162'
+            alt='Ultima V Phaser'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
           />
         </div>

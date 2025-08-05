@@ -16,22 +16,19 @@ const ContactPage = () => {
             Address
           </h2>
           <div className='bg-white p-5'>
+            <p className='text-gray-600'>Nathan Buskirk</p>
             <p className='text-gray-600'>110 Aurora Street</p>
             <p className='text-gray-600'>Bethlehem, PA 18018</p>
-            <p>&nbsp;</p>
-            <p>
-              <Mail size={14} className='inline-block text-gray-600' />
+
+            <p className='mt-5'>
               <Link
                 href='mailto:nbuskirk@gmail.com'
-                className='pl-5 text-gray-600 hover:text-sky-600'
+                className='text-gray-600 hover:text-sky-600'
               >
                 nbuskirk@gmail.com
               </Link>
             </p>
-            <p className='text-gray-600'>
-              <Phone size={14} className='inline-block' />
-              <span className='pl-5'>(424) 299-0383</span>
-            </p>
+            <p className='text-gray-600'>(424) 299-0383</p>
           </div>
         </div>
         <div>
@@ -82,7 +79,7 @@ const ContactPage = () => {
                   target='_blank'
                   className='text-neutral-500 hover:text-sky-600'
                 >
-                  DOCX
+                  DOC
                 </Link>
               </li>
             </ul>
