@@ -15,7 +15,7 @@ interface MenuLink {
 
 const primaryMenuLinks: MenuLink[] = [
   { name: 'Home', href: '/home' },
-  { name: 'About', href: '/about' },
+  // { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
   { name: 'Code', href: '/file-browser' },
   { name: 'Contact', href: '/contact' },

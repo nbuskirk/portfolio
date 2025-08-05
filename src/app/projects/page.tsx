@@ -15,6 +15,13 @@ const Projects = () => {
         them--screenshots or photos showing the software.
       </p>
       <p className='mt-4 text-gray-600'>
+        I have always been interested in video games and video game development.
+        Some of the game demos are made with unity, while others are created
+        with html5 game engines like phaser. One day I would love to invest more
+        time in game development and see what I can actually come up with if I
+        dedicate myself to it for awhile.
+      </p>
+      <p className='mt-4 text-gray-600'>
         My GitHub account is/was used primary for just experimentation and demo
         purposes. A majority of the software that i&apos;ve worked on is not
         available to be publicly accessible (private internal repos).
@@ -85,6 +92,46 @@ const Projects = () => {
       </h2>
 
       <div className='mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5'>
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss1.png'
+            layout='fill'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss2.png'
+            layout='fill'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss3.png'
+            layout='fill'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss4.png'
+            layout='fill'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
+        <div className='relative h-60 w-full'>
+          <Image
+            src='/screenshots/ss5.png'
+            layout='fill'
+            alt='Unity Demo'
+            className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
+          />
+        </div>
         <div className='relative h-60 w-full'>
           <Image
             src='/screenshots/hcastle1.png'
