@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Phone, Mail } from 'lucide-react';
 const ContactPage = () => {
   return (
     <div className='min-h-[calc(100vh-87px)] bg-zinc-100 px-15 py-15'>
