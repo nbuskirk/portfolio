@@ -94,7 +94,7 @@ const Projects = () => {
       <div className='mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5'>
         <div className='relative h-60 w-full'>
           <Image
-            src='/screenshots/ss1.png'
+            src='/screenshots/ss1.PNG'
             layout='fill'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
@@ -102,7 +102,7 @@ const Projects = () => {
         </div>
         <div className='relative h-60 w-full'>
           <Image
-            src='/screenshots/ss2.png'
+            src='/screenshots/ss2.PNG'
             layout='fill'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
@@ -110,7 +110,7 @@ const Projects = () => {
         </div>
         <div className='relative h-60 w-full'>
           <Image
-            src='/screenshots/ss3.png'
+            src='/screenshots/ss3.PNG'
             layout='fill'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
@@ -118,7 +118,7 @@ const Projects = () => {
         </div>
         <div className='relative h-60 w-full'>
           <Image
-            src='/screenshots/ss4.png'
+            src='/screenshots/ss4.PNG'
             layout='fill'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
@@ -126,7 +126,7 @@ const Projects = () => {
         </div>
         <div className='relative h-60 w-full'>
           <Image
-            src='/screenshots/ss5.png'
+            src='/screenshots/ss5.PNG'
             layout='fill'
             alt='Unity Demo'
             className='cursor-pointer border-1 border-gray-200 bg-white p-5 transition-all duration-300 hover:border-sky-600'
