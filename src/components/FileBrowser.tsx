@@ -1,16 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import FileModal from './FileModal';
 import { Folder, File } from 'lucide-react';
+import FileModal from './FileModal';
 
 export default function FileBrowser({ initialPath }: { initialPath: string }) {
   const [files, setFiles] = useState<
     { name: string; isDirectory: boolean; fullPath: string }[]
   >([]);
-  const [modalPath, setModalPath] = useState<string | null>(null);
-
+  const [currentPath, setCurrentPath] = useState<string | null>('');
+  const [modalOpen, setModalOpen] = useState(false);
   files.sort((a, b) => {
     if (a.isDirectory && !b.isDirectory) return -1;
     if (!a.isDirectory && b.isDirectory) return 1;
@@ -19,46 +18,61 @@ export default function FileBrowser({ initialPath }: { initialPath: string }) {
   useEffect(() => {
     fetch('/api/list', {
       method: 'POST',
-      body: JSON.stringify({ path: initialPath }),
+      body: JSON.stringify({ path: currentPath }),
       headers: { 'Content-Type': 'application/json' },
     })
       .then((res) => res.json())
       .then((res) => {
         if (res.success) setFiles(res.contents);
       });
-  }, [initialPath]);
+  }, [currentPath]);
 
   return (
-    <div className='flex space-y-4'>
-      <div className='w-64 flex-none'>
-        <ul className='text-sm'>
-          {files.map((file) =>
-            file.isDirectory ? (
-              <li key={file.fullPath} className='flex items-center'>
-                <Folder size='12' className='mr-2 inline text-gray-600' />
-                <Link
-                  className='font-medium text-gray-600 uppercase hover:text-sky-600'
-                  href={`/file-browser/${file.fullPath}`}
-                >
-                  {file.name}
-                </Link>
-              </li>
+    <div className='mt-5 flex'>
+      <ul>
+        <li>
+          <span
+            className='cursor-pointer font-medium text-gray-600 uppercase hover:text-sky-600'
+            onClick={() => {
+              if (currentPath === null || currentPath === '') {
+                setCurrentPath(initialPath);
+              } else {
+                const parentPath = currentPath
+                  .split('/')
+                  .slice(0, -1)
+                  .join('/');
+                setCurrentPath(parentPath || initialPath);
+              }
+            }}
+          >
+            ..
+          </span>
+        </li>
+        {files.map((file) => (
+          <li key={file.fullPath} className='flex items-center'>
+            {file.isDirectory ? (
+              <Folder size='12' className='mr-2 inline text-gray-600' />
             ) : (
-              <li key={file.fullPath} className='flex items-center'>
-                <File size='12' className='mr-2 inline text-gray-600' />
-                <span
-                  className='cursor-pointer text-gray-600 hover:text-sky-600'
-                  onClick={() => setModalPath(file.fullPath)}
-                >
-                  {file.name}
-                </span>
-              </li>
-            )
-          )}
-        </ul>
-      </div>
-      {modalPath && (
-        <FileModal path={modalPath} onClose={() => setModalPath(null)} />
+              <File size='12' className='mr-2 inline text-gray-600' />
+            )}
+            <span
+              className={`${file.isDirectory ? 'font-medium' : ''} cursor-pointer text-gray-600 hover:text-sky-600`}
+              onClick={() => {
+                if (file.isDirectory) {
+                  setCurrentPath(file.fullPath);
+                } else {
+                  setCurrentPath(file.fullPath);
+                  setModalOpen(true);
+                }
+              }}
+            >
+              {file.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      {modalOpen && (
+        <FileModal path={currentPath!} onClose={() => setModalOpen(false)} />
       )}
     </div>
   );

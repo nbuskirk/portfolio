@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Scrollbar } from 'react-scrollbars-custom';
 
 export default function FileModal({
   path,
+  onClose,
 }: {
   path: string;
   onClose: () => void;
@@ -24,14 +26,15 @@ export default function FileModal({
   }, [path]);
 
   return (
-    <div className='w-full'>
-      {/* <button onClick={onClose} className='float-right'>
-        x
-      </button> */}
-      {/* <h2 className='mb-4 text-lg text-neutral-600'>File: {path}</h2> */}
-      <pre className='w-full border-2 border-sky-800 bg-sky-950 p-5 font-mono text-sm whitespace-pre-wrap text-white'>
-        {content}
-      </pre>
+    <div
+      className='fixed top-0 left-0 z-10 h-full w-full bg-black/90'
+      onClick={onClose}
+    >
+      <div className='absolute top-1/2 left-1/2 z-20 h-[80%] w-[80%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg bg-white p-5'>
+        <Scrollbar style={{ width: '100%', height: '100%' }}>
+          <pre className='text-sm text-gray-600'>{content}</pre>
+        </Scrollbar>
+      </div>
     </div>
   );
 }

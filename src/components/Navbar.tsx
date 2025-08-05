@@ -17,7 +17,7 @@ const primaryMenuLinks: MenuLink[] = [
   { name: 'Home', href: '/home' },
   // { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Code', href: '/file-browser' },
+  { name: 'Code', href: '/code' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -51,7 +51,7 @@ const Navbar = () => {
         ))}
       </ul>
       {mobileMenu && (
-        <div className='absolute top-0 left-0 z-20 h-screen w-[calc(100vw-100px)] border-r-3 border-neutral-200 bg-white opacity-95'>
+        <div className='absolute top-0 left-0 z-20 h-screen w-[80%] border-r-3 border-neutral-200 bg-white'>
           <X
             size='24'
             className='absolute top-5 right-5 cursor-pointer text-neutral-800'
